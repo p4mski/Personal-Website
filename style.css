@@ -11,7 +11,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 64%;
 }
 
 body{
@@ -129,7 +129,7 @@ span{
 }
 
 .home-content p{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .home-img{
@@ -137,17 +137,24 @@ span{
 }
 
 .home-img img{
-    position: relative;
-    width: 20vw;
+    width: auto;
+    height: auto; 
+    object-fit: cover;
+    animation: spinning 3.5s infinite;
     border-radius: 50%;
-    box-shadow: 0 0 25px solid #b74b4b;
-    cursor: pointer;
-    transition: 0.2s linear;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 5);
 }
 
-.home-img img:hover{
-    transform: scale(1.5) translateX(-90px)
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
+
 
 .social-icons a{
     display: inline-flex;
@@ -223,6 +230,7 @@ span{
 
 .teks {
     text-shadow:1.5px 1.5px 0px #161616;
+    font-size: 50px;
 }
 
 .teks:hover {
